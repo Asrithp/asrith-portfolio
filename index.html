@@ -1,51 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Asrith Kumar | QA Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial; max-width: 800px; margin: 2rem auto; padding: 1rem; }
-    h1, h2 { color: #004080; }
-    a { color: #0077cc; }
-    section { margin-bottom: 2rem; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      color: white;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .intro { background: #007acc; }
+    .about { background: #1d3557; }
+    .projects { background: #264653; }
+    .skills { background: #2a9d8f; }
+    .contact { background: #6a4c93; }
+    .button {
+      margin-top: 20px;
+      background: white;
+      color: #007acc;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Pakapati Asrith Kumar</h1>
-  <p>QA Engineer | Automation & Manual Testing | Hyderabad, India</p>
-  <p>
-    📧 <a href="mailto:asrith.pakalapati@gmail.com">asrith.pakalapati@gmail.com</a> |
-    <a href="https://linkedin.com/in/pakalapati-asrith-kumar-23a374283">LinkedIn</a> |
-    <a href="https://github.com/Asrithp">GitHub</a>
-  </p>
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section>
+  <section id="intro" class="intro">
+    <h1>Pakapati Asrith Kumar</h1>
+    <p>QA Engineer | Automation & Manual Testing | Hyderabad, India</p>
+    <a class="button" href="https://drive.google.com/your-resume-link" target="_blank">Download Resume</a>
+  </section>
+
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Certified QA Engineer with 2+ years of experience in manual and automation testing (Playwright, Selenium, Appium), REST API testing, and CI/CD integration. Passionate about building scalable test frameworks and ensuring software quality in agile teams.</p>
+    <p>Certified QA Engineer with 2+ years of experience in manual and automation testing across web and mobile platforms. Skilled in Playwright, Selenium, Appium, Postman, Swagger, JMeter, and cloud platforms like LambdaTest and Sauce Labs. Strong collaborator in Agile teams with CI/CD practices.</p>
   </section>
 
-  <section>
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><b>Playwright Automation Framework (Narois Software)</b> – Built modular test framework, reducing onboarding time by 40% and bugs by 30%</li>
-      <li><b>REST API Testing</b> – Tested 30+ endpoints using Postman, improved data accuracy by 25%</li>
-      <li><b>OpenCart QA Testing</b> – Manual QA for eCommerce site, logged 15+ bugs, improved workflow stability</li>
-      <li><b>Niyo App QA</b> – Mobile beta testing for Android/iOS banking app</li>
-    </ul>
+    <p>
+      <strong>Playwright Framework:</strong> Reduced onboarding time by 40%, improved stability by 30%.<br><br>
+      <strong>REST API Testing:</strong> 30+ endpoints tested with Postman & Swagger, +25% validation accuracy.<br><br>
+      <strong>OpenCart QA:</strong> 30+ test cases, 15+ bugs reported, enhanced eCommerce workflows.<br><br>
+      <strong>Niyo App:</strong> Mobile testing during beta phase; improved usability and security.
+    </p>
   </section>
 
-  <section>
+  <section id="skills" class="skills">
     <h2>Skills</h2>
-    <p><b>Automation:</b> Playwright, Selenium, Appium<br>
-    <b>API:</b> Postman, Swagger<br>
-    <b>CI/CD:</b> Jenkins, GitHub, Azure DevOps<br>
-    <b>Languages:</b> Java, Python, SQL<br>
-    <b>Other:</b> Jira, Zephyr, JMeter, LambdaTest, Sauce Labs</p>
+    <p>
+      <strong>Automation:</strong> Playwright, Selenium, Appium<br>
+      <strong>API:</strong> Postman, Swagger<br>
+      <strong>Performance:</strong> JMeter<br>
+      <strong>Languages:</strong> Java, Python, SQL<br>
+      <strong>CI/CD:</strong> Jenkins, GitHub Actions, Azure DevOps<br>
+      <strong>Other:</strong> Jira, Zephyr Scale, LambdaTest, ChatGPT
+    </p>
   </section>
 
-  <section>
-    <h2>Resume</h2>
-    <p><a href="https://drive.google.com/your-resume-link">Download My Resume</a></p>
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>Email: <a href="mailto:asrith.pakalapati@gmail.com" style="color:#fff;">asrith.pakalapati@gmail.com</a></p>
+    <p><a class="button" href="https://www.linkedin.com/in/pakalapati-asrith-kumar-23a374283" target="_blank">LinkedIn</a></p>
+    <p><a class="button" href="https://github.com/Asrithp" target="_blank">GitHub</a></p>
   </section>
 
 </body>
